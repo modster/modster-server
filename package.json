@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "modster-server",
   "version": "1.0.0",
   "description": "A basic server, nothing fancy, but why reinvent the wheel every time...",
   "main": "server.js",

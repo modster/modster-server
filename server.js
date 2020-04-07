@@ -9,11 +9,10 @@ const hostname = "127.0.0.1";
 
 // S e r v e r
 const server = http.createServer((req, res) => {
-  // G r a b  R e q u e s t  H e a d e r s,  M e t h o d,  a n d  U r 
+  // G r a b  R e q u e s t  H e a d e r s,  M e t h o d,  a n d  U r l
   const { headers, method, url } = req;
-  //const queryObject = url.parse(req.url,true).query;
-  //console.log(queryObject);
   let body = [];
+  
   req.on('error', (err) => {
     console.error(err);
   // R e a d  S t r e a m 
@@ -22,10 +21,9 @@ const server = http.createServer((req, res) => {
   }).on('end', () => {
     // C o n v e r t   M e s s a g e  to  S t r i n g
     body = Buffer.concat(body).toString();
-    // P a r s e  R e s p o n s e
-    let x = JSON.parse(body);
-    console.log(x.whatever);
-    // S a v e   i t   to   D B
+
+    // C o m i n g  S o o n
+      // switch
 
 
 
